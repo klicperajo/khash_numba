@@ -11,7 +11,7 @@ static inline void *khash_int2int_init(void) {
 
 static void khash_int2int_destroy(void *_hash) {
     khash_t(i2i) *hash = (khash_t(i2i)*)_hash;
-    if (hash) kh_destroy(i2i, hash); 
+    if (hash) kh_destroy(i2i, hash);
 }
 
 static inline khint64_t khash_int2int_get(void *_hash, khint64_t key, khint64_t default_value) {
